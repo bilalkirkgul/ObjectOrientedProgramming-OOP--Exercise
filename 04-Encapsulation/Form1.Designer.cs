@@ -1,5 +1,5 @@
 ﻿
-namespace _01_OOPIntro
+namespace _04_Encapsulation
 {
     partial class Form1
     {
