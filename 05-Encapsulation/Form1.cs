@@ -25,13 +25,21 @@ namespace _05_Encapsulation
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            Ogrenci ogrenci = new Ogrenci();
-            ogrenci.SetOkulNo(int.Parse(txtOkulNo.Text));
-            ogrenci.SetIsim(txtAdSoyad.Text);
-            ogrenci.SetDogumTarihi(dtpDogumTarihi.Value);
+            try
+            {
+                Ogrenci ogrenci = new Ogrenci();
+                ogrenci.SetOkulNo(int.Parse(txtOkulNo.Text));
+                ogrenci.SetIsim(txtAdSoyad.Text);
+                ogrenci.SetDogumTarihi(dtpDogumTarihi.Value);
 
-            MessageBox.Show(ogrenci.GetOkulNo().ToString()+" "+ogrenci.GetIsim()+" "+ogrenci.GetDogumTarihi());
+                MessageBox.Show(ogrenci.GetOkulNo().ToString() + " " + ogrenci.GetIsim() + " " + ogrenci.GetDogumTarihi());
 
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
