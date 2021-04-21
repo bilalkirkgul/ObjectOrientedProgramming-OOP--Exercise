@@ -1,0 +1,46 @@
+
+Nesne Yönelimli Programlama
+
+Nesne yönelikli programlamaya örnek verecek olursak gerçek hayatta gördüðümüz araba, radyo, bina… gibi nesnelerin bilgisayar ortamýna aktarýlmasýna denir.
+
+Nesne Yönelikli Programlamanýn saðladýðý kolaylýklar
+
+Nesne Yönelimli Programlamanýn Faydalarý
+Nesne oluþturma bir sýnýf içerisinde toplanýr ve tüm projelerde kullanýlabilirliðe olanak saðlar.
+Sýnýflarýn 1 kez oluþturulmasý sayesinde uzun kodlarý tekrardan yazmak yerine kýsa kodlamalar ile çalýþtýrýlabilir.
+Uzun kodlarýn tekrar yazýlmasýnýn engellenmesi sayesinde geliþtirme süreci kýsalýr.
+Nesneler birbirinden baðýmsýz olduðundan bilgi gizliliði konusunda avantaj saðlar.
+Sýnýflar sayesinde tüm projelerde deðiþiklik yapmak yerine tek bir sýnýfta deðiþiklik yapýlýp tüm projelerde çalýþmasý saðlanýr. Bu zaman kaybýný büyük ölçüde azaltýr.
+
+Sýnýf Nedir?
+Deðiþkenleri ve methodlarý bir arada saklayan sistemdir.
+Deðiþkenler kullanacaðýmýz verileri örneðin ad, soyad, yaþ gibi verileri saklar. Metotlar bu verilerin toplanmasý gibi görevleri saðlayan bir sistemdir.
+
+Nesne Nedir? 
+Verileri saklayan ve bu veriler üzerinde iþlem yapan metodlarý saklayan bileþenlerdir. 
+
+Nesne Yönelimli Programlamanýn Özellikleri Nelerdir?
+Sistemimizin birçok özelliði vardýr. Bunlarý 4 temel özellikte inceleyebiliriz.
+
+Soyutlama (Abstraction)
+Kapsülleme (Encapsulation)
+Miras Alma (Inheritance)
+Çok Biçimlilik (Polymorphism)
+Soyutlama (Abstraction)
+
+Bir sýnýfýn özelliklerinin ve davranýþlarýnýn tanýmlanmasýna denir. Örneðin: Bir kiþinin adý, soyadý, yaþý, boyu, kilosu, saç rengi gibi özellikleridir. Kiþinin yetenekleri davranýþlarý içerisinde yer alýr ve metotlar ile saklanýr.
+
+
+Kapsülleme (Encapsulation)
+Davranýþ ve özellikler sýnýfta soyutlanýr ve saklanýr. Kapsülleme ile hangi özellik ve davranýþýn dýþarýdan kullanýlacaðýný belirleyebiliriz. Örneðin: Kiþinin bizi ilgilendirmeyen kýsýmlarýný private ederek yani saklayarak gizleyebiliriz. Bu olaya kapsülleme adý verilir.
+
+Kapsülleme Public, Private ve Protected olarak 3 kýsýmda incelenir.
+Public: Herkesin kullanabildiði özellik ve davranýþlara verilen isimdir.
+Private: Sadece kendi sýnýfýnda kullanýlan özellik ve davranýþlara verilen isimdir.
+Protected: Sýnýf ve Miras Alýnan alt sýnýflarda kullanýlmaya açýk olanlara verilen isimdir.
+
+Miras Alma 
+Alt ve üst sýnýfýn ortak özelliklerinden alabilme sistemine Miras Alma denir. Örneðin; Bir nesneni diðer bir nesne ile ortak özelliklerindeki verileri alabilir.
+
+Çok Biçimlilik 
+Alt Sýnýf ve Üst Sýnýfýn özelliklerinden farklý þekilde davranýþlar göstermesine Çok Biçimlilik denir. Örneðin; Bir nesnenin diðer bir nesneyle ortak özellikleri olmasýna raðmen farklý özelliklerininde tanýmlanabilmesine denir.

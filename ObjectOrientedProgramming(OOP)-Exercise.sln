@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadMe", "ReadMe", "{361E3019-DB18-4D8A-B519-D4B17C04D25F}"
+	ProjectSection(SolutionItems) = preProject
+		ObjectOrientedProgramming.txt = ObjectOrientedProgramming.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-OOPIntro", "01-OOPIntro\01-OOPIntro.csproj", "{0BF39C51-6A70-4A2B-A101-0569703E511C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BF39C51-6A70-4A2B-A101-0569703E511C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF39C51-6A70-4A2B-A101-0569703E511C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF39C51-6A70-4A2B-A101-0569703E511C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF39C51-6A70-4A2B-A101-0569703E511C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74E8E155-04CB-4E08-8C7D-2E8B96B45428}
+	EndGlobalSection
+EndGlobal
