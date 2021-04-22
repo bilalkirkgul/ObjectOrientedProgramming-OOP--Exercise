@@ -20,6 +20,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-Encapsulation", "05-Enca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-EncapsulationValueParametre", "06-EncapsulationValueParametre\06-EncapsulationValueParametre.csproj", "{9C76D1FE-CB41-44E2-90CC-8D9AFDE0E97E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-Polymorphism", "07-Polymorphism\07-Polymorphism.csproj", "{2D58FFDF-2BE1-4809-8B25-C2EE2A873C4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-Abstraction", "08-Abstraction\08-Abstraction.csproj", "{45B5E754-E9AE-40C4-99E3-5C69D52A09DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +54,14 @@ Global
 		{9C76D1FE-CB41-44E2-90CC-8D9AFDE0E97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C76D1FE-CB41-44E2-90CC-8D9AFDE0E97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C76D1FE-CB41-44E2-90CC-8D9AFDE0E97E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D58FFDF-2BE1-4809-8B25-C2EE2A873C4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D58FFDF-2BE1-4809-8B25-C2EE2A873C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D58FFDF-2BE1-4809-8B25-C2EE2A873C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D58FFDF-2BE1-4809-8B25-C2EE2A873C4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45B5E754-E9AE-40C4-99E3-5C69D52A09DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B5E754-E9AE-40C4-99E3-5C69D52A09DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B5E754-E9AE-40C4-99E3-5C69D52A09DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B5E754-E9AE-40C4-99E3-5C69D52A09DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

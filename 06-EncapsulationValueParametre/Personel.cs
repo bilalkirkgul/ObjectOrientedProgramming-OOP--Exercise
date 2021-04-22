@@ -10,35 +10,34 @@ namespace _06_EncapsulationValueParametre
     {
         //Ad Soyad metinsel ve en az iki karakterli olmalı
 
-        string _ad;
+        private string _ad;
+
         public string Ad
         {
-            get
-            {
-
-                return _ad;
-            }
+            get { return _ad; }
             set
             {
+
                 foreach (char item in value)
                 {
                     if (!char.IsLetter(item))
                     {
-                        throw new Exception("isim metinsel değerlerle oluşmalıdır");
+                        throw new Exception("İsim metinsel karakterlerden oluşmalıdır");
                     }
                 }
-                if (value.Length < 3)
+                if (value.Length >= 3)
                 {
-                    throw new Exception("İsim en az 3 karakterden oluşmalıdır.");
+                    _ad = value;
+
                 }
                 else
                 {
-                    _ad = value;
+                    throw new Exception("İsim en az 3 karakterden oluşmalıdır");
                 }
-
 
             }
         }
+
 
         //Ad Soyad metinsel ve en az iki karakterli olmalı
 
@@ -54,24 +53,26 @@ namespace _06_EncapsulationValueParametre
                 {
                     if (!char.IsLetter(item))
                     {
-                        throw new Exception("Soyisim metinsel karakterlerden oluşmalıdır");
+                        throw new Exception("Soyad metinsel karakterlerden oluşmalıdır");
                     }
                 }
                 if (value.Length >= 2)
                 {
                     _soyad = value;
+
                 }
                 else
                 {
-                    throw new Exception("Personel Soyad en az iki karakterden oluşmalıdır");
+                    throw new Exception("Soyad en az 2 karakterden oluşmalıdır")
                 }
-
-
             }
+
         }
 
 
+
         //tc 11 karakterli son karakteri çift olmalı
+
         private string _tc;
 
         public string TCKimlikNo
@@ -79,24 +80,24 @@ namespace _06_EncapsulationValueParametre
             get { return _tc; }
             set
             {
+
                 if (value.Length != 11)
                 {
-                    throw new Exception("Tc Kimlik Numarası 11 Haneli olmaldıır ");
+                    throw new Exception("TC No 11 karakterli olmalıdır");
                 }
 
-                if (!long.TryParse(value, out long tc))
+                if (!long.TryParse(value, out long tcNo))
                 {
-                    throw new Exception("tc kimlik sayılardan oluşmalıdır");
+                    throw new Exception("TC No sayılardan oluşmalıdır");
                 }
-                if (tc % 2 != 0)
+                if (tcNo % 2 != 0)
                 {
-                    throw new Exception("Tc kimlik numrası çift sayı olmalıdır");
+                    throw new Exception("Hatalı tc no girildi. Son hane çift sayı olmalıdır");
                 }
                 _tc = value;
-
             }
-
         }
+
 
         //personelNumarası 
         //AdınBaşHarfi + SoyadınBasHarfi+tcson3harfi olmalı
@@ -110,15 +111,16 @@ namespace _06_EncapsulationValueParametre
             set
             {
 
-                string SifreliNo = _ad.Substring(0, 1).ToUpper() + _soyad.Substring(0, 1).ToUpper() + _tc.Substring(8, 3);
+                string perNo = _ad.Substring(0, 1).ToUpper() + _soyad.Substring(90, 1).ToUpper() + _tc.Substring(8, 3);
 
-                if (SifreliNo != value)
+                if (perNo != value)
                 {
-                    throw new Exception("Personel No hatalı giriş yapıldı");
+                    throw new Exception("Hatalı personel numrası girdiniz");
                 }
                 _personelNo = value;
             }
         }
+
 
 
         //email adresinde @ bulunup .com ile bitmeli
@@ -137,10 +139,11 @@ namespace _06_EncapsulationValueParametre
                 }
                 else
                 {
-                    throw new Exception("Hatalı formatta mail adresi girildi");
+                    throw new Exception("Hatalı formatta mail adresi girdiniz");
                 }
             }
         }
+
 
 
 
