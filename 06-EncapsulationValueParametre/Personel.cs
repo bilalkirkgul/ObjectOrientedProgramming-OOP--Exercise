@@ -63,7 +63,7 @@ namespace _06_EncapsulationValueParametre
                 }
                 else
                 {
-                    throw new Exception("Soyad en az 2 karakterden oluşmalıdır")
+                    throw new Exception("Soyad en az 2 karakterden oluşmalıdır");
                 }
             }
 
