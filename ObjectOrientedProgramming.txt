@@ -26,7 +26,7 @@ Soyutlama (Abstraction)
 Kapsülleme (Encapsulation)
 Miras Alma (Inheritance)
 Çok Biçimlilik (Polymorphism)
-Soyutlama (Abstraction)
+
 
 Soyutlama (Abstraction)
 Bir sýnýfýn özelliklerinin ve davranýþlarýnýn tanýmlanmasýna denir. Örneðin: Bir kiþinin adý, soyadý, yaþý, boyu, kilosu, saç rengi gibi özellikleridir. Kiþinin yetenekleri davranýþlarý içerisinde yer alýr ve metotlar ile saklanýr.

@@ -8,6 +8,11 @@ namespace _07_Polymorphism.Classes
 {
     class TemizlikGorevlisi:Personel
     {
-      
+        public decimal Prim { get; set; }
+
+        public override decimal Maas()
+        {
+            return base.Maas()+Prim;
+        }
     }
 }

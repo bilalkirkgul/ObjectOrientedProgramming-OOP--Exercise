@@ -73,6 +73,7 @@ namespace _11_List
             {
                 lbVeri.Items.Add(item); //ToString methodunu overrite ettiğimiz için add içerisine product özelliklerini tek tek vermemize gerek kalmadı..
             }
+            
 
         }
 

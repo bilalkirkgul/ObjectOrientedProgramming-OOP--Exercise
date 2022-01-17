@@ -17,6 +17,8 @@ namespace _08_Abstraction.Classes
         public string Renk { get; set; }
         public string Marka { get; set; }
         public abstract string Ciz();
+
+        public abstract void Boya();
       
 
     }

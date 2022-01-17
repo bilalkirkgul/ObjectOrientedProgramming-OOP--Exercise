@@ -9,22 +9,49 @@ namespace _05_Encapsulation.Classes
     class Ogrenci
     {
 
-        int _okulNo;
-        public void SetOkulNo(int okulNo)
+        //int _okulNo;
+        //public void SetOkulNo(int okulNo)
+        //{
+        //    if (okulNo.ToString().Length==3)
+        //    {
+        //        _okulNo = okulNo;
+        //    }
+        //    else
+        //    {
+        //        throw new Exception("okul no 3 harfli olmalıdır");
+        //    }
+        //}
+        //public int GetOkulNo()
+        //{
+        //    return _okulNo;
+        //}
+
+        private string _okulNo;
+
+        public string OkulNo
         {
-            if (okulNo.ToString().Length==3)
-            {
-                _okulNo = okulNo;
-            }
-            else
-            {
-                throw new Exception("okul no 3 harfli olmalıdır");
-            }
+            get { return _okulNo; }
+            set {
+
+                foreach (char item in value)
+                {
+                    if (!char.IsDigit(item))
+                    {
+                        throw new Exception("Okul no sayılardan oluşmalıdır");
+                    }
+                }
+                if (value.Length==3)
+                {
+                    _okulNo = value;
+                }
+                else
+                {
+                    throw new Exception("Okul numrası 3 basamaklı sayı olmalıdır");
+                }
+                
+                 }
         }
-        public int GetOkulNo()
-        {
-            return _okulNo;
-        }
+
         string _isim;
         public void SetIsim(string isim)
         {

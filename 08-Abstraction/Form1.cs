@@ -26,7 +26,7 @@ namespace _08_Abstraction
             KursunKalem kursunKalem = new KursunKalem();
             kursunKalem.Marka = "FaberCastell";
             kursunKalem.Renk = "Siyah";
-
+            kursunKalem.Boya();
             MessageBox.Show($"{kursunKalem.Marka} {kursunKalem.Renk} {kursunKalem.Ciz()}");
         }
     }

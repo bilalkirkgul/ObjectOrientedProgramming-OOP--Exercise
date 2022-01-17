@@ -28,12 +28,13 @@ namespace _05_Encapsulation
             try
             {
                 Ogrenci ogrenci = new Ogrenci();
-                ogrenci.SetOkulNo(int.Parse(txtOkulNo.Text));
+                //ogrenci.SetOkulNo(int.Parse(txtOkulNo.Text));
+                ogrenci.OkulNo = txtOkulNo.Text;
                 ogrenci.SetIsim(txtAdSoyad.Text);
                 ogrenci.SetDogumTarihi(dtpDogumTarihi.Value);
 
-                MessageBox.Show(ogrenci.GetOkulNo().ToString() + " " + ogrenci.GetIsim() + " " + ogrenci.GetDogumTarihi());
-
+                //MessageBox.Show(ogrenci.GetOkulNo().ToString() + " " + ogrenci.GetIsim() + " " + ogrenci.GetDogumTarihi());
+                MessageBox.Show(ogrenci.OkulNo.ToString() + " " + ogrenci.GetIsim() + " " + ogrenci.GetDogumTarihi());
             }
             catch (Exception ex)
             {
