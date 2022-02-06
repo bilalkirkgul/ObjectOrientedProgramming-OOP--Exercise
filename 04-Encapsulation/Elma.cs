@@ -12,6 +12,9 @@ namespace _04_Encapsulation
 
         public void SetAgirlik(decimal agirlik)
         {
+            //Property'nin set bloğu gelen value değeri yakalar
+
+
             if (agirlik>0 && agirlik<10)
             {
                 _agirlik = agirlik;
@@ -24,6 +27,7 @@ namespace _04_Encapsulation
 
         public decimal GetAgirlik()
         {
+            //Property'nin get bloğu gelen value değeri döndürür
             return _agirlik;
         }
 
